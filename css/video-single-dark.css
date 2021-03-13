@@ -1,0 +1,101 @@
+
+.dark-theme .main-container {
+    background-color: #101117 !important;
+}
+.dark-theme .header-container {
+    background-color: #180021 !important;
+}
+.dark-theme #search-box{
+    background-color: #44314c;
+}
+.dark-theme img[src="./img/icons8-calendar-50-2.png"]{
+    filter: hue-rotate(-89deg) brightness(0.8);
+}
+.dark-theme .navbar.navbar-expand-lg{
+    background-color: #191c30 !important;
+}
+.dark-theme .nav-item-link {
+    background-color: #2e3345;
+    color: #ffffff !important;
+    border:none !important
+}
+.dark-theme .mdi-trending-up {
+    background-color: #ffffff;
+    color:black;
+}
+.dark-theme .mdi.mdi-menu {
+    background-color:#ffffff !important;
+    color: black !important;
+}
+.dark-theme .menu-divider{
+    color: #ffffff !important;
+}
+.dark-theme .menu-fast-access{
+    color: #ffffff;
+}
+.dark-theme .advertise {
+    background-color: #222635;
+    color: #808181;
+}
+.dark-theme .advertise h1{
+    color: #808181 !important;
+}
+
+.dark-theme .profile {
+    background-color: #101117;
+}
+.dark-theme .sidebar{
+    background-color: #222635;
+}
+.dark-theme .sidebar h5 {
+    color:#ffffff
+}
+.dark-theme .name {
+    color:#ffffff
+}
+.dark-theme .side-contain {
+    background-color: #ffba00;
+}
+.dark-theme .offer {
+    background-color: #ef8f00;
+}
+.dark-theme .side-left {
+    background-color: #222635;
+}
+.dark-theme .main {
+    background-color: #101117 !important;
+    color: #737373;
+}
+.dark-theme .side-left-section-title {
+    color: #ffffff;
+}
+.dark-theme .hashtags button {
+    background-color: #2e3345;
+    color: #ffffff;
+}
+.dark-theme form {
+    background-color: #222635;
+}
+.dark-theme form input{
+    background-color: #414551;
+}
+.dark-theme .see-comment {
+    background-color: #2e3345;
+    color: #737373;
+}
+.dark-theme .slider-section{
+    background-color: #222635;
+}
+.dark-theme .header-slider h4{
+    color:#737373 !important
+}
+.dark-theme .right-control , .dark-theme .left-control {
+    background-color: #414551;
+}
+.dark-theme .comments-sections {
+    background-color: #222635 !important;
+}
+.dark-theme .enter-comments {
+    background-color: #414551 !important;
+}
+

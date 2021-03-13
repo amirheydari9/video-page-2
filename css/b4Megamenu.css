@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-area{
+    position: static;
+    /*width: 100%;*/
+
+}
+.mega-area{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px;
+}
+
+.nav.navbar-nav {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.nav.navbar-nav li {
+    float: right !important;
+    margin-right: 10px;
+}
+
+/*.dropdown-item{*/
+/*    padding: 5px 0;*/
+/*}*/
+
+/*.navbar{*/
+/*    margin-top: 2px;*/
+/*}*/
+
+/*.navbar-nav .nav-item .nav-link{*/
+/*    color: #fff;*/
+/*    font-size: 18px;*/
+/*    font-weight: 700;*/
+/*}*/
+
+
+/*.navbar-nav .nav-item .nav-link:hover{*/
+/*    background-color: coral;*/
+/*}*/
+
+
+

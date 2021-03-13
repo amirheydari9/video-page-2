@@ -1,0 +1,234 @@
+body{
+    direction: rtl;
+}
+.nav {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    /* background-color: #222; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 10;
+    transition-duration: .4s;
+  }
+  
+  .nav.open {
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 10px;
+    overflow: auto;
+  }
+  
+  .nav__list {
+    display: none;
+  }
+  
+  .nav__list.show {
+    display: flex;
+    /* flex-direction: column; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: transparent;
+    width: 100%;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .nav__item:nth-child(1) {
+    animation-delay: .2s;
+  }
+  
+  .nav__item:nth-child(2) {
+    animation-delay: .3s;
+  }
+  
+  .nav__item:nth-child(3) {
+    animation-delay: .4s;
+  }
+  
+  .nav__item:nth-child(4) {
+    animation-delay: .5s;
+  }
+  .nav__item:nth-child(5) {
+    animation-delay: .5s;
+  }
+  .nav__item:nth-child(6) {
+    animation-delay: .5s;
+  }
+  .nav__item:nth-child(7) {
+    animation-delay: .5s;
+  }
+  .nav__item:nth-child(8) {
+    animation-delay: .5s;
+  }
+  .nav__item:nth-child(9) {
+    animation-delay: .5s;
+  }
+  .nav__item:nth-child(10) {
+    animation-delay: .5s;
+  }
+  .nav__item:nth-child(11) {
+    animation-delay: .5s;
+  }
+  .nav__item:nth-child(12) {
+    animation-delay: .5s;
+  }
+  
+  
+  
+  .nav__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  .nav_link {
+    font-size: 1.3rem !important;
+    color: #4E006E !important;
+    width: 100%;
+  }
+  .nav_link:hover {
+    text-decoration: none !important;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 42px;
+    right: 28px;
+    /* background-color: #fff; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 20;
+    /* box-shadow: 0px 3px 8px #333; */
+    cursor: pointer;
+  }
+  
+  .menu__line {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 13px;
+    transition-duration: .4s;
+  }
+  
+  .menu__line:nth-child(1) {
+    top: 14px;
+  }
+  
+  .menu__line:nth-child(2) {
+    top: 23px;
+  }
+  
+  .menu__line:nth-child(3) {
+    bottom: 14px;
+  }
+  
+  .menu.active {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    top: 4px;
+    right: 4px;
+    position: fixed;
+  }
+  
+  .menu.active .menu__line:nth-child(1) {
+    transform: translate(-12px, 9px) rotate(-45deg);
+  }
+  
+  .menu.active .menu__line:nth-child(2) {
+    transition-duration: 0s;
+    opacity: 0;
+  }
+  
+  .menu.active .menu__line:nth-child(3) {
+    transform: translate(-12px, -9px) rotate(45deg);
+  }
+ .js-menu , .nav{
+    display: none !important;
+  }
+  .contain{
+      height: 480px;
+      flex-basis: 50%;
+  }
+  h6{
+    color: #4E006E !important;
+    font-size: 1.4rem !important;
+  }
+  .nav__list.js-nav__list{
+    position: relative;
+  }
+ 
+.nav__list.js-nav__list::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 105%;
+  left: 50%;
+  background: #4E006E;
+  bottom: -42px;
+}
+.menu.active .menu__line:nth-child(1) {
+    background-color: #4e006e;
+}
+.menu.active .menu__line:nth-child(3) {
+  background-color: #4e006e;
+}
+.nav__item:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width:992px){
+    .js-menu , .nav {
+        display: flex !important;
+    } 
+}
+@media only screen and (max-width:576px){
+  .nav_link {
+      font-size: 1rem !important;
+  }
+  h6{
+      font-size: 1rem !important;
+      /* font-weight:400 !important ; */
+  }
+  ul{
+      padding-right: 15px;
+  }
+  .menu {
+    top:calc((100vw - 124px) / 10);
+    
+  }
+  
+}

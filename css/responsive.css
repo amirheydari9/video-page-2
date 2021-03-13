@@ -1,0 +1,6 @@
+@media screen and (min-width: 991px) {
+    .custom-tab-padding, .custom-tab-content-padding {
+        padding-right: 150px !important;
+        padding-left: 150px !important;
+    }
+}
