@@ -1641,6 +1641,9 @@ manageEndedMainVideo = function () {
         pause.style.display = "none";
         videoTag.addEventListener('timeupdate', getAdsSource, false);
         animatedBtn.classList.toggle("animations");
+        setTimeout(function (){
+            videoTag.load()
+        })
     }
 }
 
